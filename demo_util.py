@@ -88,13 +88,25 @@ def sample_fn(generator,
               return_tensor=False):
     generator.eval()
     tokenizer.eval()
+    
     if labels is None:
         # goldfish, chicken, tiger, cat, hourglass, ship, dog, race car, airliner, teddy bear, random
         labels = [1, 7, 282, 604, 724, 179, 751, 404, 850, torch.randint(0, 999, size=(1,))]
 
+    # Ensure labels are a tensor and move to device
     if not isinstance(labels, torch.Tensor):
         labels = torch.LongTensor(labels).to(device)
+    
+    print(f"Labels shape: {labels.shape}")  # Debugging line
 
+    # Check if the condition is not empty
+    if labels.numel() == 0:
+        raise ValueError("Labels tensor is empty. Ensure the labels are valid.")
+
+    # Add debugging info for tensor before passing to generate
+    print(f"Condition labels: {labels}")
+    
+    # Pass the condition labels to generate
     generated_tokens = generator.generate(
         condition=labels,
         guidance_scale=guidance_scale,
@@ -102,14 +114,20 @@ def sample_fn(generator,
         guidance_scale_pow=guidance_scale_pow,
         randomize_temperature=randomize_temperature,
         softmax_temperature_annealing=softmax_temperature_annealing,
-        num_sample_steps=num_sample_steps)
-    
+        num_sample_steps=num_sample_steps
+    )
+
+    print(f"Generated tokens: {generated_tokens.shape}")  # Debugging line
+
+    # Decode tokens into image
     generated_image = tokenizer.decode_tokens(
         generated_tokens.view(generated_tokens.shape[0], -1)
     )
+    
     if return_tensor:
         return generated_image
 
+    # Process the image
     generated_image = torch.clamp(generated_image, 0.0, 1.0)
     generated_image = (generated_image * 255.0).permute(0, 2, 3, 1).to("cpu", dtype=torch.uint8).numpy()
 
