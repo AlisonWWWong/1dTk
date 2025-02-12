@@ -423,6 +423,8 @@ class RAR(BaseModel):
                 kv_cache=True,
                 **kwargs):
         condition = self.preprocess_condition(condition, cond_drop_prob=0.0)
+        print(f"condition shape: {condition.shape}")
+
         device = condition.device
         num_samples = condition.shape[0]
         ids = torch.full((num_samples, 0), -1, device=device)
@@ -436,6 +438,7 @@ class RAR(BaseModel):
             scale_pow = torch.ones((1), device=device) * guidance_scale_pow
             scale_step = (1 - torch.cos(((step / self.image_seq_len) ** scale_pow) * torch.pi)) * 1/2
             cfg_scale = (guidance_scale - 1) * scale_step + 1
+            print(f"cfg_scale: {cfg_scale}, guidance_scale: {guidance_scale}")
 
             # Compute logits based on the current sequence
             logits = self.forward_fn(ids, condition, is_sampling=True)
