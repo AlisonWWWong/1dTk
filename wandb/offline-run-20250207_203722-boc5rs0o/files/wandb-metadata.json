@@ -1,0 +1,51 @@
+{
+  "os":  "Linux-6.8.0-48-generic-x86_64-with-glibc2.17",
+  "python":  "CPython 3.8.20",
+  "startedAt":  "2025-02-07T12:37:23.303807Z",
+  "args":  [
+    "--config",
+    "/home/alisonwh/1dTk/configs/training/TA-TiTok/tatitok_bl32_vae.yaml"
+  ],
+  "program":  "scripts/train_maskgit.py",
+  "codePath":  "scripts/train_maskgit.py",
+  "git":  {
+    "remote":  "git@github.com:AlisonWWWong/1dTk.git",
+    "commit":  "543a0b241aa0c9f1eabe96b6b28ec7acf658121f"
+  },
+  "root":  "/home/alisonwh/1dTk",
+  "host":  "node01",
+  "executable":  "/home/alisonwh/.conda/envs/1dTk/bin/python",
+  "codePathLocal":  "scripts/train_maskgit.py",
+  "cpu_count":  24,
+  "cpu_count_logical":  48,
+  "gpu":  "NVIDIA A100-SXM4-40GB",
+  "gpu_count":  2,
+  "disk":  {
+    "/":  {
+      "total":  "941886369792",
+      "used":  "288022499328"
+    }
+  },
+  "memory":  {
+    "total":  "133608308736"
+  },
+  "cpu":  {
+    "count":  24,
+    "countLogical":  48
+  },
+  "gpu_nvidia":  [
+    {
+      "name":  "NVIDIA A100-SXM4-40GB",
+      "memoryTotal":  "42949672960",
+      "cudaCores":  6912,
+      "architecture":  "Ampere"
+    },
+    {
+      "name":  "NVIDIA A100-SXM4-40GB",
+      "memoryTotal":  "42949672960",
+      "cudaCores":  6912,
+      "architecture":  "Ampere"
+    }
+  ],
+  "cudaVersion":  "12.2"
+}

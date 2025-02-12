@@ -1,0 +1,14 @@
+{"time":"2025-02-07T20:37:23.313917958+08:00","level":"INFO","msg":"stream: starting","core version":"0.19.6","symlink path":"/home/alisonwh/1dTk/wandb/offline-run-20250207_203722-boc5rs0o/logs/debug-core.log"}
+{"time":"2025-02-07T20:37:24.248148064+08:00","level":"INFO","msg":"created new stream","id":"boc5rs0o"}
+{"time":"2025-02-07T20:37:24.24817241+08:00","level":"INFO","msg":"stream: started","id":"boc5rs0o"}
+{"time":"2025-02-07T20:37:24.248204553+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"boc5rs0o"}
+{"time":"2025-02-07T20:37:24.248341503+08:00","level":"INFO","msg":"handler: started","stream_id":"boc5rs0o"}
+{"time":"2025-02-07T20:37:24.248809355+08:00","level":"INFO","msg":"sender: started","stream_id":"boc5rs0o"}
+{"time":"2025-02-07T20:37:24.253197941+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-02-07T20:37:29.877448892+08:00","level":"INFO","msg":"stream: closing","id":"boc5rs0o"}
+{"time":"2025-02-07T20:37:29.877488311+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-02-07T20:37:29.877950591+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-02-07T20:37:29.889401801+08:00","level":"INFO","msg":"handler: closed","stream_id":"boc5rs0o"}
+{"time":"2025-02-07T20:37:29.889414808+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"boc5rs0o"}
+{"time":"2025-02-07T20:37:29.889421038+08:00","level":"INFO","msg":"sender: closed","stream_id":"boc5rs0o"}
+{"time":"2025-02-07T20:37:29.889474359+08:00","level":"INFO","msg":"stream: closed","id":"boc5rs0o"}

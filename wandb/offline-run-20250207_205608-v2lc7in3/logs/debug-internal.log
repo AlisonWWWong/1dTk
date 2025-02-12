@@ -1,0 +1,14 @@
+{"time":"2025-02-07T20:56:08.286864453+08:00","level":"INFO","msg":"stream: starting","core version":"0.19.6","symlink path":"/home/alisonwh/1dTk/wandb/offline-run-20250207_205608-v2lc7in3/logs/debug-core.log"}
+{"time":"2025-02-07T20:56:09.204223929+08:00","level":"INFO","msg":"created new stream","id":"v2lc7in3"}
+{"time":"2025-02-07T20:56:09.204249622+08:00","level":"INFO","msg":"stream: started","id":"v2lc7in3"}
+{"time":"2025-02-07T20:56:09.204427815+08:00","level":"INFO","msg":"sender: started","stream_id":"v2lc7in3"}
+{"time":"2025-02-07T20:56:09.204418267+08:00","level":"INFO","msg":"handler: started","stream_id":"v2lc7in3"}
+{"time":"2025-02-07T20:56:09.204420744+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"v2lc7in3"}
+{"time":"2025-02-07T20:56:09.210341866+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-02-07T20:56:11.607529886+08:00","level":"INFO","msg":"stream: closing","id":"v2lc7in3"}
+{"time":"2025-02-07T20:56:11.607576731+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-02-07T20:56:11.608178297+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-02-07T20:56:11.608280511+08:00","level":"INFO","msg":"handler: closed","stream_id":"v2lc7in3"}
+{"time":"2025-02-07T20:56:11.608296061+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"v2lc7in3"}
+{"time":"2025-02-07T20:56:11.608310347+08:00","level":"INFO","msg":"sender: closed","stream_id":"v2lc7in3"}
+{"time":"2025-02-07T20:56:11.608372922+08:00","level":"INFO","msg":"stream: closed","id":"v2lc7in3"}
